@@ -11,12 +11,13 @@ const game = () => {
 
         playBtn.addEventListener("click", () =>{
             introScreen.classList.add("fadeOut");
+            match.classList.remove("fadeOut");
             match.classList.add("fadeIn");
         });
     };
     //PLay Match
     const playMatch = () => {
-        const options = document.querySelectorAll(".option button");
+        const options = document.querySelectorAll(".options button");
         const playerHand = document.querySelector(".player-hand");
         const computerHand = document.querySelector(".computer-hand");
         const hands = document.querySelectorAll(".hands img");
